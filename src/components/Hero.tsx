@@ -27,7 +27,7 @@ export const Hero = () => {
             <TwitterIcon className="w-6 h-6 cursor-pointer hover:text-primary transition-colors" />
             <InstagramIcon className="w-6 h-6 cursor-pointer hover:text-primary transition-colors" />
             <LinkedinIcon className="w-6 h-6 cursor-pointer hover:text-primary transition-colors" />
-            <Code className="w-6 h-6 cursor-pointer hover:text-primary transition-colors" />
+            
           </div>
         </div>
         <div className="relative">
