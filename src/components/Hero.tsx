@@ -1,9 +1,6 @@
-
 import { FacebookIcon, TwitterIcon, InstagramIcon, LinkedinIcon, Code } from "lucide-react";
-
 export const Hero = () => {
-  return (
-    <section id="home" className="min-h-screen pt-20 px-6 gradient-bg">
+  return <section id="home" className="min-h-screen pt-20 px-6 gradient-bg">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="flex flex-col justify-center space-y-6">
           <h1 className="text-6xl font-bold">
@@ -34,13 +31,8 @@ export const Hero = () => {
           </div>
         </div>
         <div className="relative">
-          <img 
-            src="/lovable-uploads/ef0ffdda-07f9-490f-a39c-4695bd3202cd.png"
-            alt="Developer portrait"
-            className="w-full h-full object-contain"
-          />
+          
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
