@@ -4,12 +4,12 @@ import { FacebookIcon, TwitterIcon, InstagramIcon, LinkedinIcon } from "lucide-r
 export const Hero = () => {
   return (
     <section id="home" className="min-h-screen pt-20 px-6 gradient-bg flex items-center">
-      <div className="max-w-7xl mx-auto w-full grid grid-cols-2 gap-12">
+      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div className="space-y-6">
           <h1 className="text-6xl font-bold">
             Hello 👋
             <br />
-            I'm a web Developer
+            I'm a Web Developer
           </h1>
           <p className="text-xl opacity-90">I build things for web</p>
           <div className="flex gap-4">
@@ -31,7 +31,7 @@ export const Hero = () => {
         </div>
         <div className="relative">
           <img 
-            src="/lovable-uploads/e87191a9-3564-4889-a484-46a186845b97.png" 
+            src="/lovable-uploads/43aa69b2-9b50-47d8-8854-7d3677fd360a.png" 
             alt="Developer avatar"
             className="w-full object-contain"
           />

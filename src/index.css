@@ -7,15 +7,15 @@
 
 @layer base {
   :root {
-    --background: 261 34% 17%;
+    --background: 267 33% 12%;
     --foreground: 0 0% 100%;
     --card: 0 0% 100%;
-    --card-foreground: 261 34% 17%;
-    --primary: 271 68% 50%;
+    --card-foreground: 267 33% 12%;
+    --primary: 267 75% 65%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 261 34% 17%;
-    --secondary-foreground: 0 0% 100%;
-    --accent: 271 68% 50%;
+    --secondary: 267 33% 97%;
+    --secondary-foreground: 267 33% 12%;
+    --accent: 267 75% 65%;
     --accent-foreground: 0 0% 100%;
   }
 
@@ -25,12 +25,16 @@
   }
 }
 
+.gradient-bg {
+  background: linear-gradient(135deg, #291C3A 0%, #812DD0 100%);
+}
+
 .project-card {
   @apply relative overflow-hidden rounded-lg transition-all duration-300 hover:scale-105;
 }
 
-.gradient-bg {
-  background: linear-gradient(135deg, #291C3A 0%, #812DD0 100%);
+.skill-icon {
+  @apply w-12 h-12 rounded-lg bg-primary/10 p-2 hover:bg-primary/20 transition-colors;
 }
 
 .line-decoration {
