@@ -14,17 +14,18 @@ export const Hero = () => {
             </span>
           </h1>
           <p className="text-xl opacity-90">I build things for web</p>
-          <div className="flex gap-8">
+          <div className="flex items-center gap-8 bg-white/5 backdrop-blur-sm rounded-xl p-6">
             <div className="flex items-center gap-2">
               <span className="text-4xl font-bold text-purple-400">3</span>
               <span className="text-sm opacity-80">YEARS OF<br />EXPERIENCE</span>
             </div>
+            <div className="w-px h-12 bg-white/10" />
             <div className="flex items-center gap-2">
               <span className="text-4xl font-bold text-purple-400">12</span>
               <span className="text-sm opacity-80">PROJECTS<br />COMPLETED</span>
             </div>
           </div>
-          <div className="flex gap-4 pt-4">
+          <div className="flex gap-4 pt-4 bg-white/5 backdrop-blur-sm rounded-xl p-4">
             <FacebookIcon className="w-6 h-6 cursor-pointer hover:text-primary transition-colors" />
             <TwitterIcon className="w-6 h-6 cursor-pointer hover:text-primary transition-colors" />
             <InstagramIcon className="w-6 h-6 cursor-pointer hover:text-primary transition-colors" />
