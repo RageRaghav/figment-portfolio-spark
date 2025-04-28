@@ -1,16 +1,16 @@
 
 import { Card } from "@/components/ui/card";
-import { Python, Javascript, Html, Css, React as ReactIcon, Database, Github } from "lucide-react";
+import { Code, CodepenIcon, FileJson, Globe, Database, GithubIcon, MonitorSmartphone } from "lucide-react";
 
 export const Skills = () => {
   const skills = [
-    { name: "Python", icon: Python },
-    { name: "JavaScript", icon: Javascript },
-    { name: "HTML", icon: Html },
-    { name: "CSS", icon: Css },
-    { name: "React.js", icon: ReactIcon },
+    { name: "Python", icon: FileJson },
+    { name: "JavaScript", icon: CodepenIcon },
+    { name: "HTML", icon: Globe },
+    { name: "CSS", icon: Code },
+    { name: "React.js", icon: MonitorSmartphone },
     { name: "Firebase", icon: Database },
-    { name: "Git/GitHub", icon: Github },
+    { name: "Git/GitHub", icon: GithubIcon },
   ];
 
   const frameworks = ["ReactJS", "Node.js", "Flutter"];
