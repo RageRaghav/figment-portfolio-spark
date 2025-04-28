@@ -1,6 +1,4 @@
-
 import { FacebookIcon, TwitterIcon, InstagramIcon, LinkedinIcon, Code, GithubIcon } from "lucide-react";
-
 export const Hero = () => {
   return <section id="home" className="min-h-screen pt-20 px-6 gradient-bg">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -12,7 +10,7 @@ export const Hero = () => {
               I'm Raghav Jindal
             </span>
           </h1>
-          <p className="text-xl opacity-90">Computer Science Student & Frontend Developer</p>
+          <p className="text-xl opacity-90">Computer Science Student & App Developer </p>
           <div className="flex items-center gap-8 bg-white/5 backdrop-blur-sm rounded-xl p-6">
             <div className="flex items-center gap-2">
               <span className="text-4xl font-bold text-purple-400">3</span>
