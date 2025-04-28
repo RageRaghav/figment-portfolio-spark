@@ -1,12 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
-
 export const Contact = () => {
-  return (
-    <section id="contact" className="py-20 px-6 gradient-bg">
+  return <section id="contact" className="py-20 px-6 gradient-bg">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col items-center text-center mb-16 animate-slide-up">
+        <div className="flex flex-col items-center text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
           <div className="w-24 h-1 bg-primary rounded-full mb-6"></div>
           <p className="text-white/80 max-w-2xl">
@@ -15,7 +13,7 @@ export const Contact = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
-          <div className="lg:col-span-2 space-y-6 stagger-animation">
+          <div className="lg:col-span-2 space-y-6">
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
             
             <Card className="p-6 bg-background/20 backdrop-blur-lg border-white/10">
@@ -24,7 +22,7 @@ export const Contact = () => {
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <p className="text-sm text-white/60">Email</p>
+                  <p className="text-sm text-white/60">jindalraghav2112@gmail.com</p>
                   <p className="font-medium">jindal.raghav05@gmail.com</p>
                 </div>
               </div>
@@ -70,49 +68,29 @@ export const Contact = () => {
             </div>
           </div>
           
-          <div className="lg:col-span-3 animate-slide-up" style={{ animationDelay: '0.4s' }}>
+          <div className="lg:col-span-3">
             <Card className="p-8 bg-background/20 backdrop-blur-lg border-white/10">
               <h3 className="text-2xl font-semibold mb-6">Send Me a Message</h3>
               <form className="space-y-5">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm text-white/80">Your Name</label>
-                    <input
-                      type="text"
-                      id="name"
-                      placeholder="John Doe"
-                      className="w-full p-3 rounded-lg bg-background/50 border border-white/10 focus:border-primary/40 outline-none"
-                    />
+                    <input type="text" id="name" placeholder="John Doe" className="w-full p-3 rounded-lg bg-background/50 border border-white/10 focus:border-primary/40 outline-none" />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="email" className="text-sm text-white/80">Your Email</label>
-                    <input
-                      type="email"
-                      id="email"
-                      placeholder="john@example.com"
-                      className="w-full p-3 rounded-lg bg-background/50 border border-white/10 focus:border-primary/40 outline-none"
-                    />
+                    <input type="email" id="email" placeholder="john@example.com" className="w-full p-3 rounded-lg bg-background/50 border border-white/10 focus:border-primary/40 outline-none" />
                   </div>
                 </div>
                 
                 <div className="space-y-2">
                   <label htmlFor="subject" className="text-sm text-white/80">Subject</label>
-                  <input
-                    type="text"
-                    id="subject"
-                    placeholder="Project Inquiry"
-                    className="w-full p-3 rounded-lg bg-background/50 border border-white/10 focus:border-primary/40 outline-none"
-                  />
+                  <input type="text" id="subject" placeholder="Project Inquiry" className="w-full p-3 rounded-lg bg-background/50 border border-white/10 focus:border-primary/40 outline-none" />
                 </div>
                 
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-sm text-white/80">Your Message</label>
-                  <textarea
-                    id="message"
-                    placeholder="Hello Raghav, I'd like to discuss a project..."
-                    rows={5}
-                    className="w-full p-3 rounded-lg bg-background/50 border border-white/10 focus:border-primary/40 outline-none resize-none"
-                  ></textarea>
+                  <textarea id="message" placeholder="Hello Raghav, I'd like to discuss a project..." rows={5} className="w-full p-3 rounded-lg bg-background/50 border border-white/10 focus:border-primary/40 outline-none resize-none"></textarea>
                 </div>
                 
                 <Button className="w-full bg-primary hover:bg-primary/80 flex items-center justify-center gap-2">
@@ -124,6 +102,5 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
