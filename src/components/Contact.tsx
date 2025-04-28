@@ -55,9 +55,7 @@ export const Contact = () => {
             <div className="pt-6">
               <h3 className="text-xl mb-4">I'm interested in...</h3>
               <div className="flex flex-wrap gap-3">
-                <span className="px-4 py-2 bg-background/20 backdrop-blur-lg rounded-full text-sm">
-                  Frontend Development
-                </span>
+                
                 <span className="px-4 py-2 bg-background/20 backdrop-blur-lg rounded-full text-sm">
                   UI/UX Design
                 </span>
