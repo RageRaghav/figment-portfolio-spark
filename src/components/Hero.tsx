@@ -1,10 +1,7 @@
-
 import { GithubIcon, LinkedinIcon, ArrowDownCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 export const Hero = () => {
-  return (
-    <section id="home" className="min-h-screen pt-28 pb-20 px-6 gradient-bg">
+  return <section id="home" className="min-h-screen pt-28 pb-20 px-6 gradient-bg">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="flex flex-col space-y-6">
           <div className="flex items-center gap-2">
@@ -44,12 +41,10 @@ export const Hero = () => {
               </Button>
             </a>
             <div className="flex items-center gap-4">
-              <a href="https://github.com/RagoRaghav" target="_blank" rel="noopener noreferrer" 
-                 className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-primary/20 transition-colors">
+              <a href="https://github.com/RagoRaghav" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-primary/20 transition-colors">
                 <GithubIcon className="w-5 h-5" />
               </a>
-              <a href="https://linkedin.com/jindal5112" target="_blank" rel="noopener noreferrer" 
-                 className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-primary/20 transition-colors">
+              <a href="https://linkedin.com/jindal5112" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-primary/20 transition-colors">
                 <LinkedinIcon className="w-5 h-5" />
               </a>
             </div>
@@ -59,14 +54,9 @@ export const Hero = () => {
         <div className="relative flex justify-center lg:justify-end">
           <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full bg-primary/20 purple-glow flex items-center justify-center overflow-hidden">
             <div className="absolute inset-2 rounded-full overflow-hidden bg-background flex items-center justify-center">
-              <img 
-                src="public/lovable-uploads/49cb26df-f4f3-4f0f-b3f9-8414997ef56e.png" 
-                alt="Raghav Jindal" 
-                className="w-full h-full object-cover rounded-full"
-                onError={(e) => {
-                  e.currentTarget.src = 'https://via.placeholder.com/400x400?text=Raghav+Jindal';
-                }}
-              />
+              <img alt="Raghav Jindal" onError={e => {
+              e.currentTarget.src = 'https://via.placeholder.com/400x400?text=Raghav+Jindal';
+            }} className="w-full h-full rounded-full object-cover" src="/lovable-uploads/9eb6b151-0738-41d6-ae04-d4c964dec233.jpg" />
             </div>
           </div>
           <div className="absolute -bottom-8 right-0 lg:right-8 bg-card p-4 rounded-lg purple-glow">
@@ -77,6 +67,5 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
