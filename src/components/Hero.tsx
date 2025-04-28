@@ -56,7 +56,7 @@ export const Hero = () => {
             <div className="absolute inset-2 rounded-full overflow-hidden bg-background flex items-center justify-center">
               <img alt="Raghav Jindal" onError={e => {
               e.currentTarget.src = 'https://via.placeholder.com/400x400?text=Raghav+Jindal';
-            }} className="w-full h-full rounded-full object-cover" src="/lovable-uploads/9eb6b151-0738-41d6-ae04-d4c964dec233.jpg" />
+            }} className="w-full h-full rounded-full object-cover" src="/lovable-uploads/0e9ad0a4-20d4-427a-959e-71a91fb9056e.jpg" />
             </div>
           </div>
           <div className="absolute -bottom-8 right-0 lg:right-8 bg-card p-4 rounded-lg purple-glow">
