@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Code, FileJson, Globe, Database, MonitorSmartphone, FileCode } from "lucide-react";
 
@@ -19,7 +18,7 @@ export const Skills = () => {
   return (
     <section id="skills" className="py-20 px-6 bg-card">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col items-center text-center mb-16">
+        <div className="flex flex-col items-center text-center mb-16 animate-slide-up">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">My Skills</h2>
           <div className="w-24 h-1 bg-primary rounded-full mb-6"></div>
           <p className="text-white/80 max-w-2xl">
@@ -28,7 +27,7 @@ export const Skills = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div>
+          <div className="stagger-animation">
             <h3 className="text-xl font-semibold mb-8 text-center">Technologies</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
               {skills.map((skill) => (
@@ -42,7 +41,7 @@ export const Skills = () => {
             </div>
           </div>
           
-          <div className="space-y-8">
+          <div className="space-y-8 stagger-animation">
             <div>
               <h3 className="text-xl font-semibold mb-6 text-center">Frameworks</h3>
               <div className="bg-background rounded-lg p-6 border border-white/5">

@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
@@ -34,7 +33,7 @@ export const Projects = () => {
   return (
     <section id="projects" className="py-20 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col items-center text-center mb-16">
+        <div className="flex flex-col items-center text-center mb-16 animate-slide-up">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">My Recent Work</h2>
           <div className="w-24 h-1 bg-primary rounded-full mb-6"></div>
           <p className="text-white/80 max-w-2xl">
@@ -42,7 +41,7 @@ export const Projects = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 stagger-animation">
           {projects.map((project) => (
             <Card key={project.title} className="overflow-hidden bg-card border-white/10 flex flex-col card-hover">
               <div className="h-48 overflow-hidden">

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 export const Hero = () => {
   return <section id="home" className="min-h-screen pt-28 pb-20 px-6 gradient-bg">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div className="flex flex-col space-y-6">
+        <div className="flex flex-col space-y-6 stagger-animation">
           <div className="flex items-center gap-2">
             <div className="h-1 w-12 bg-primary rounded-full"></div>
             <p className="text-primary font-medium">Raghav Jindal</p>
@@ -51,7 +51,7 @@ export const Hero = () => {
           </div>
         </div>
         
-        <div className="relative flex justify-center lg:justify-end">
+        <div className="relative flex justify-center lg:justify-end animate-slide-up" style={{ animationDelay: '0.4s' }}>
           <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full bg-primary/20 purple-glow flex items-center justify-center overflow-hidden">
             <div className="absolute inset-2 rounded-full overflow-hidden bg-background flex items-center justify-center">
               <img alt="Raghav Jindal" onError={e => {

@@ -1,4 +1,3 @@
-
 import { BookOpen, Briefcase, Award } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
@@ -6,7 +5,7 @@ export const About = () => {
   return (
     <section id="about" className="py-20 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col items-center text-center mb-16">
+        <div className="flex flex-col items-center text-center mb-16 animate-slide-up">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">My Experience</h2>
           <div className="w-24 h-1 bg-primary rounded-full mb-6"></div>
           <p className="text-white/80 max-w-2xl">
@@ -23,7 +22,7 @@ export const About = () => {
               </div>
               <h3 className="text-2xl font-bold">My Education</h3>
             </div>
-            <div className="space-y-6">
+            <div className="space-y-6 stagger-animation">
               <Card className="p-6 bg-card border border-white/10 card-hover">
                 <div className="flex justify-between items-start mb-4">
                   <div>
@@ -66,7 +65,7 @@ export const About = () => {
               </div>
               <h3 className="text-2xl font-bold">My Experience</h3>
             </div>
-            <div className="space-y-6">
+            <div className="space-y-6 stagger-animation">
               <Card className="p-6 bg-card border border-white/10 card-hover">
                 <div className="flex justify-between items-start mb-4">
                   <div>

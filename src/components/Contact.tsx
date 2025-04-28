@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
@@ -7,7 +6,7 @@ export const Contact = () => {
   return (
     <section id="contact" className="py-20 px-6 gradient-bg">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col items-center text-center mb-16">
+        <div className="flex flex-col items-center text-center mb-16 animate-slide-up">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
           <div className="w-24 h-1 bg-primary rounded-full mb-6"></div>
           <p className="text-white/80 max-w-2xl">
@@ -16,7 +15,7 @@ export const Contact = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
-          <div className="lg:col-span-2 space-y-6">
+          <div className="lg:col-span-2 space-y-6 stagger-animation">
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
             
             <Card className="p-6 bg-background/20 backdrop-blur-lg border-white/10">
@@ -71,7 +70,7 @@ export const Contact = () => {
             </div>
           </div>
           
-          <div className="lg:col-span-3">
+          <div className="lg:col-span-3 animate-slide-up" style={{ animationDelay: '0.4s' }}>
             <Card className="p-8 bg-background/20 backdrop-blur-lg border-white/10">
               <h3 className="text-2xl font-semibold mb-6">Send Me a Message</h3>
               <form className="space-y-5">
