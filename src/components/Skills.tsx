@@ -1,16 +1,15 @@
 
 import { Card } from "@/components/ui/card";
-import { Code, CodepenIcon, FileJson, Globe, Database, GithubIcon, MonitorSmartphone } from "lucide-react";
+import { Code, FileJson, Globe, Database, MonitorSmartphone, FileCode } from "lucide-react";
 
 export const Skills = () => {
   const skills = [
-    { name: "Python", icon: FileJson },
-    { name: "JavaScript", icon: CodepenIcon },
-    { name: "HTML", icon: Globe },
-    { name: "CSS", icon: Code },
-    { name: "React.js", icon: MonitorSmartphone },
-    { name: "Firebase", icon: Database },
-    { name: "Git/GitHub", icon: GithubIcon },
+    { name: "Python", icon: FileJson, color: "#3776AB" },
+    { name: "JavaScript", icon: FileCode, color: "#F7DF1E" },
+    { name: "HTML", icon: Globe, color: "#E34F26" },
+    { name: "CSS", icon: Code, color: "#1572B6" },
+    { name: "React.js", icon: MonitorSmartphone, color: "#61DAFB" },
+    { name: "Firebase", icon: Database, color: "#FFCA28" },
   ];
 
   const frameworks = ["ReactJS", "Node.js", "Flutter"];
@@ -18,52 +17,68 @@ export const Skills = () => {
   const others = ["Git/GitHub", "Provider"];
 
   return (
-    <section id="skills" className="py-20 px-6">
+    <section id="skills" className="py-20 px-6 bg-card">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold mb-8">My Skills</h2>
+        <div className="flex flex-col items-center text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">My Skills</h2>
+          <div className="w-24 h-1 bg-primary rounded-full mb-6"></div>
+          <p className="text-white/80 max-w-2xl">
+            I've worked with various technologies and frameworks, focusing on frontend development and application design.
+          </p>
+        </div>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-xl font-semibold mb-6">Technologies</h3>
+            <h3 className="text-xl font-semibold mb-8 text-center">Technologies</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
               {skills.map((skill) => (
-                <Card key={skill.name} className="p-4 bg-primary/10 border-primary/20 hover:bg-primary/20 transition-colors">
-                  <div className="text-center">
-                    <skill.icon className="w-8 h-8 mx-auto mb-2" />
-                    <p className="text-sm text-white/80">{skill.name}</p>
+                <Card key={skill.name} className="p-6 bg-background border-white/5 flex flex-col items-center justify-center card-hover">
+                  <div className="w-16 h-16 flex items-center justify-center rounded-full bg-primary/10 mb-4">
+                    <skill.icon className="w-8 h-8" style={{ color: skill.color }} />
                   </div>
+                  <p className="text-center text-sm font-medium">{skill.name}</p>
                 </Card>
               ))}
             </div>
           </div>
-          <div className="space-y-6">
+          
+          <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-semibold mb-4">Frameworks</h3>
-              <div className="flex flex-wrap gap-2">
-                {frameworks.map((framework) => (
-                  <span key={framework} className="px-3 py-1 bg-primary/10 rounded-full text-sm">
-                    {framework}
-                  </span>
-                ))}
+              <h3 className="text-xl font-semibold mb-6 text-center">Frameworks</h3>
+              <div className="bg-background rounded-lg p-6 border border-white/5">
+                <div className="flex flex-wrap gap-3">
+                  {frameworks.map((framework) => (
+                    <span key={framework} className="px-4 py-2 bg-primary/10 rounded-full text-sm">
+                      {framework}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
+            
             <div>
-              <h3 className="text-xl font-semibold mb-4">Databases</h3>
-              <div className="flex flex-wrap gap-2">
-                {databases.map((db) => (
-                  <span key={db} className="px-3 py-1 bg-primary/10 rounded-full text-sm">
-                    {db}
-                  </span>
-                ))}
+              <h3 className="text-xl font-semibold mb-6 text-center">Databases</h3>
+              <div className="bg-background rounded-lg p-6 border border-white/5">
+                <div className="flex flex-wrap gap-3">
+                  {databases.map((db) => (
+                    <span key={db} className="px-4 py-2 bg-primary/10 rounded-full text-sm">
+                      {db}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
+            
             <div>
-              <h3 className="text-xl font-semibold mb-4">Others</h3>
-              <div className="flex flex-wrap gap-2">
-                {others.map((item) => (
-                  <span key={item} className="px-3 py-1 bg-primary/10 rounded-full text-sm">
-                    {item}
-                  </span>
-                ))}
+              <h3 className="text-xl font-semibold mb-6 text-center">Others</h3>
+              <div className="bg-background rounded-lg p-6 border border-white/5">
+                <div className="flex flex-wrap gap-3">
+                  {others.map((item) => (
+                    <span key={item} className="px-4 py-2 bg-primary/10 rounded-full text-sm">
+                      {item}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 @tailwind base;
@@ -6,14 +7,14 @@
 
 @layer base {
   :root {
-    --background: 267 33% 12%;
+    --background: 267 33% 6%;
     --foreground: 0 0% 100%;
-    --card: 0 0% 100%;
-    --card-foreground: 267 33% 12%;
+    --card: 267 33% 10%;
+    --card-foreground: 0 0% 100%;
     --primary: 267 75% 65%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 267 33% 97%;
-    --secondary-foreground: 267 33% 12%;
+    --secondary: 267 33% 12%;
+    --secondary-foreground: 0 0% 100%;
     --accent: 267 75% 65%;
     --accent-foreground: 0 0% 100%;
   }
@@ -25,7 +26,7 @@
 }
 
 .gradient-bg {
-  background: linear-gradient(135deg, #2D1156 0%, #4B1E6E 100%);
+  background: linear-gradient(135deg, #1D0E38 0%, #2D1156 100%);
 }
 
 .project-card {
@@ -34,6 +35,14 @@
 
 .skill-icon {
   @apply w-12 h-12 rounded-lg bg-primary/10 p-2 hover:bg-primary/20 transition-colors;
+}
+
+.purple-glow {
+  box-shadow: 0 0 20px 5px rgba(129, 45, 208, 0.25);
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg;
 }
 
 .line-decoration {
