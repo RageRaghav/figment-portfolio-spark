@@ -31,6 +31,7 @@ export default {
       },
       fontFamily: {
         sans: ["Manrope", "sans-serif"],
+        display: ["'Clash Display'", "sans-serif"],
       },
     },
   },
