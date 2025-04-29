@@ -1,8 +1,6 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Send, Linkedin, Github } from "lucide-react";
-
 export const Contact = () => {
   return <section id="contact" className="py-20 px-6 gradient-bg">
       <div className="max-w-7xl mx-auto">
@@ -62,12 +60,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-white/60">LinkedIn</p>
-                    <a 
-                      href="https://www.linkedin.com/in/rjindal2112/" 
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="font-medium hover:text-primary transition-colors"
-                    >
+                    <a href="https://www.linkedin.com/in/rjindal2112/" target="_blank" rel="noopener noreferrer" className="font-medium hover:text-primary transition-colors">
                       rjindal2112
                     </a>
                   </div>
@@ -78,9 +71,7 @@ export const Contact = () => {
             <div className="pt-6">
               <h3 className="text-xl mb-4">I'm interested in...</h3>
               <div className="flex flex-wrap gap-3">
-                <span className="px-4 py-2 bg-background/20 backdrop-blur-lg rounded-full text-sm">
-                  UI/UX Design
-                </span>
+                <span className="px-4 py-2 bg-background/20 backdrop-blur-lg rounded-full text-sm">Web Development</span>
                 <span className="px-4 py-2 bg-background/20 backdrop-blur-lg rounded-full text-sm">
                   App Development
                 </span>
