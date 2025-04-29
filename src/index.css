@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
@@ -97,6 +98,21 @@
   background: linear-gradient(270deg, #6E37B7, #8545E6, #9B66FF, #7E57C2);
   background-size: 300% 300%;
   animation: gradientFlow 4s ease infinite;
+}
+
+/* Enhanced gradient for the "App Developer" text */
+.enhanced-gradient-text {
+  background: linear-gradient(270deg, #8A48FF, #A475FF, #B690FF, #C9ABFF, #8342EB, #6E24D2);
+  background-size: 400% 400%;
+  animation: gradientFlow 3s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 12px rgba(138, 72, 255, 0.3);
+  padding: 0.05em 0;
+  display: inline-block;
+  transform: translateZ(0); /* Fix for Safari */
+  filter: drop-shadow(0 0 8px rgba(159, 122, 234, 0.5));
 }
 
 /* Dark purple gradient for sections with white gradient */

@@ -13,7 +13,7 @@ export const Hero = () => {
           <h1 className="text-5xl md:text-6xl font-bold leading-tight">
             Computer Science Student
             <br />
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-primary to-purple-200">
+            <span className="enhanced-gradient-text">
               & App Developer
             </span>
           </h1>
