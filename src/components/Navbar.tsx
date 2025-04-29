@@ -29,7 +29,7 @@ export const Navbar = () => {
             variant="ghost" 
             size="icon" 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="text-white"
+            className="text-white rounded-full"
           >
             <Menu />
           </Button>
@@ -42,7 +42,7 @@ export const Navbar = () => {
           <a href="#skills" className="text-white hover:text-primary transition-colors">Skills</a>
           <a href="#projects" className="text-white hover:text-primary transition-colors">Projects</a>
           <a href="#contact">
-            <Button className="bg-primary text-white hover:bg-primary/80">Hire me</Button>
+            <Button variant="primaryGradient" className="rounded-full">Hire me</Button>
           </a>
         </div>
         
@@ -54,7 +54,7 @@ export const Navbar = () => {
             <a href="#skills" className="text-white hover:text-primary p-2 transition-colors" onClick={() => setMobileMenuOpen(false)}>Skills</a>
             <a href="#projects" className="text-white hover:text-primary p-2 transition-colors" onClick={() => setMobileMenuOpen(false)}>Projects</a>
             <a href="#contact" className="w-full" onClick={() => setMobileMenuOpen(false)}>
-              <Button className="bg-primary w-full text-white hover:bg-primary/80">Hire me</Button>
+              <Button variant="primaryGradient" className="w-full rounded-full">Hire me</Button>
             </a>
           </div>
         )}

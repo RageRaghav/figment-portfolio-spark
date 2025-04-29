@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
@@ -57,7 +58,7 @@ export const Projects = () => {
                 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map(tag => (
-                    <span key={tag} className="px-2 py-1 bg-primary/10 text-primary/90 text-xs rounded">
+                    <span key={tag} className="px-2 py-1 bg-primary/10 text-primary/90 text-xs rounded-full">
                       {tag}
                     </span>
                   ))}
@@ -65,13 +66,13 @@ export const Projects = () => {
                 
                 <div className="flex gap-3 mt-auto">
                   <a href={project.demoLink} className="flex-1" target="_blank" rel="noopener noreferrer">
-                    <Button variant="secondary" className="w-full flex gap-2 items-center justify-center">
+                    <Button variant="primaryGradient" className="w-full rounded-full flex gap-2 items-center justify-center">
                       <ExternalLink className="w-4 h-4" />
                       <span>Live Demo</span>
                     </Button>
                   </a>
                   <a href={project.codeLink} className="flex-1" target="_blank" rel="noopener noreferrer">
-                    <Button variant="outline" className="w-full flex gap-2 items-center justify-center border-white/20 hover:border-primary">
+                    <Button variant="gradient" className="w-full rounded-full flex gap-2 items-center justify-center">
                       <Github className="w-4 h-4" />
                       <span>Code</span>
                     </Button>

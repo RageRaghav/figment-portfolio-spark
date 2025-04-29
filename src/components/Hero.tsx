@@ -1,3 +1,4 @@
+
 import { GithubIcon, LinkedinIcon, ArrowDownCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 export const Hero = () => {
@@ -35,16 +36,16 @@ export const Hero = () => {
           
           <div className="flex gap-6 pt-4">
             <a href="#about">
-              <Button className="bg-primary hover:bg-primary/80 flex gap-2 items-center">
+              <Button variant="primaryGradient" className="rounded-full flex gap-2 items-center">
                 <span>About Me</span>
                 <ArrowDownCircle className="w-4 h-4" />
               </Button>
             </a>
             <div className="flex items-center gap-4">
-              <a href="https://github.com/RagoRaghav" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-primary/20 transition-colors">
+              <a href="https://github.com/RageRaghav" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-primary/20 transition-colors gradient-animation">
                 <GithubIcon className="w-5 h-5" />
               </a>
-              <a href="https://linkedin.com/jindal5112" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-primary/20 transition-colors">
+              <a href="https://www.linkedin.com/in/rjindal2112/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-primary/20 transition-colors gradient-animation">
                 <LinkedinIcon className="w-5 h-5" />
               </a>
             </div>

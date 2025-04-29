@@ -80,3 +80,31 @@
 .stagger-animation > *:nth-child(4) { animation-delay: 0.4s; }
 .stagger-animation > *:nth-child(5) { animation-delay: 0.5s; }
 
+/* Gradient Button Animations */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gradient-animation {
+  background: linear-gradient(270deg, #512DA8, #673AB7, #9575CD, #7E57C2);
+  background-size: 300% 300%;
+  animation: gradientFlow 4s ease infinite;
+}
+
+.primary-gradient-animation {
+  background: linear-gradient(270deg, #6E37B7, #8545E6, #9B66FF, #7E57C2);
+  background-size: 300% 300%;
+  animation: gradientFlow 4s ease infinite;
+}
+
+/* Dark purple gradient for sections with white gradient */
+.dark-purple-gradient {
+  background: linear-gradient(135deg, #2D1156 0%, #4A2888 100%);
+}
+
+/* Fully rounded buttons */
+.rounded-full-button {
+  @apply rounded-full !important;
+}

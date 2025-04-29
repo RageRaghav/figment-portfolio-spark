@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Send, Linkedin, Github } from "lucide-react";
@@ -104,7 +105,7 @@ export const Contact = () => {
                   <textarea id="message" placeholder="Hello Raghav, I'd like to discuss a project..." rows={5} className="w-full p-3 rounded-lg bg-background/50 border border-white/10 focus:border-primary/40 outline-none resize-none"></textarea>
                 </div>
                 
-                <Button className="w-full bg-primary hover:bg-primary/80 flex items-center justify-center gap-2">
+                <Button variant="gradient" className="w-full rounded-full flex items-center justify-center gap-2">
                   <Send className="w-4 h-4" />
                   <span>Send Message</span>
                 </Button>
