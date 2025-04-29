@@ -23,7 +23,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-white/60">jindalraghav2112@gmail.com</p>
-                  <p className="font-medium">jindal.raghav05@gmail.com</p>
+                  <p className="font-medium">jindalraghav2112@gmail.com</p>
                 </div>
               </div>
             </Card>
@@ -35,7 +35,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-white/60">Phone</p>
-                  <p className="font-medium">+91 9999999999</p>
+                  <p className="font-medium">+91 9560397344</p>
                 </div>
               </div>
             </Card>
