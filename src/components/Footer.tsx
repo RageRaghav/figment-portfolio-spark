@@ -14,7 +14,7 @@ export const Footer = () => {
           
           <div className="flex gap-4">
             <a 
-              href="https://github.com/RagoRaghav" 
+              href="https://github.com/RageRaghav" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-8 h-8 flex items-center justify-center rounded-full bg-white/5 hover:bg-primary/20 transition-colors"
@@ -22,7 +22,7 @@ export const Footer = () => {
               <GithubIcon className="w-4 h-4" />
             </a>
             <a 
-              href="https://linkedin.com/jindal5112" 
+              href="https://www.linkedin.com/in/rjindal2112/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-8 h-8 flex items-center justify-center rounded-full bg-white/5 hover:bg-primary/20 transition-colors"

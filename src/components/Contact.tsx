@@ -1,6 +1,8 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Linkedin, Github } from "lucide-react";
+
 export const Contact = () => {
   return <section id="contact" className="py-20 px-6 gradient-bg">
       <div className="max-w-7xl mx-auto">
@@ -16,46 +18,66 @@ export const Contact = () => {
           <div className="lg:col-span-2 space-y-6">
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
             
-            <Card className="p-6 bg-background/20 backdrop-blur-lg border-white/10">
-              <div className="flex gap-4">
-                <div className="p-3 rounded-lg bg-primary/20">
-                  <Mail className="w-6 h-6 text-primary" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Card className="p-6 bg-background/20 backdrop-blur-lg border-white/10">
+                <div className="flex gap-4">
+                  <div className="p-3 rounded-lg bg-primary/20">
+                    <Mail className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-white/60">Email</p>
+                    <p className="font-medium">jindalraghav2112@gmail.com</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-sm text-white/60">jindalraghav2112@gmail.com</p>
-                  <p className="font-medium">jindalraghav2112@gmail.com</p>
+              </Card>
+              
+              <Card className="p-6 bg-background/20 backdrop-blur-lg border-white/10">
+                <div className="flex gap-4">
+                  <div className="p-3 rounded-lg bg-primary/20">
+                    <Phone className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-white/60">Phone</p>
+                    <p className="font-medium">+91 9560397344</p>
+                  </div>
                 </div>
-              </div>
-            </Card>
-            
-            <Card className="p-6 bg-background/20 backdrop-blur-lg border-white/10">
-              <div className="flex gap-4">
-                <div className="p-3 rounded-lg bg-primary/20">
-                  <Phone className="w-6 h-6 text-primary" />
+              </Card>
+              
+              <Card className="p-6 bg-background/20 backdrop-blur-lg border-white/10">
+                <div className="flex gap-4">
+                  <div className="p-3 rounded-lg bg-primary/20">
+                    <MapPin className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-white/60">Location</p>
+                    <p className="font-medium">Ghaziabad, Uttar Pradesh, India</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-sm text-white/60">Phone</p>
-                  <p className="font-medium">+91 9560397344</p>
+              </Card>
+              
+              <Card className="p-6 bg-background/20 backdrop-blur-lg border-white/10">
+                <div className="flex gap-4">
+                  <div className="p-3 rounded-lg bg-primary/20">
+                    <Linkedin className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-white/60">LinkedIn</p>
+                    <a 
+                      href="https://www.linkedin.com/in/rjindal2112/" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-medium hover:text-primary transition-colors"
+                    >
+                      rjindal2112
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </Card>
-            
-            <Card className="p-6 bg-background/20 backdrop-blur-lg border-white/10">
-              <div className="flex gap-4">
-                <div className="p-3 rounded-lg bg-primary/20">
-                  <MapPin className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <p className="text-sm text-white/60">Location</p>
-                  <p className="font-medium">Ghaziabad, Uttar Pradesh, India</p>
-                </div>
-              </div>
-            </Card>
+              </Card>
+            </div>
             
             <div className="pt-6">
               <h3 className="text-xl mb-4">I'm interested in...</h3>
               <div className="flex flex-wrap gap-3">
-                
                 <span className="px-4 py-2 bg-background/20 backdrop-blur-lg rounded-full text-sm">
                   UI/UX Design
                 </span>
