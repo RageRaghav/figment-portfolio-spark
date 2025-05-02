@@ -60,7 +60,8 @@ export const Hero = () => {
             }} className="w-full h-full rounded-full object-cover" src="/lovable-uploads/0e9ad0a4-20d4-427a-959e-71a91fb9056e.jpg" />
             </div>
           </div>
-          <div className="absolute -bottom-8 right-0 lg:right-8 bg-card p-4 rounded-lg purple-glow">
+          {/* Fixed positioning of the "Available for work" badge */}
+          <div className="absolute -bottom-8 lg:-bottom-4 right-0 lg:right-8 bg-card p-4 rounded-lg purple-glow">
             <div className="flex items-center gap-3">
               <div className="w-3 h-3 rounded-full bg-primary animate-pulse"></div>
               <span className="text-sm font-medium">Available for work</span>

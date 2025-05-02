@@ -18,14 +18,15 @@ export const Contact = () => {
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {/* Added truncation and width control for email card */}
               <Card className="p-6 bg-background/20 backdrop-blur-lg border-white/10">
-                <div className="flex gap-4">
-                  <div className="p-3 rounded-lg bg-primary/20">
+                <div className="flex gap-4 items-center">
+                  <div className="p-3 rounded-lg bg-primary/20 flex-shrink-0">
                     <Mail className="w-6 h-6 text-primary" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-sm text-white/60">Email</p>
-                    <p className="font-medium">jindalraghav2112@gmail.com</p>
+                    <p className="font-medium truncate">jindalraghav2112@gmail.com</p>
                   </div>
                 </div>
               </Card>
@@ -42,9 +43,10 @@ export const Contact = () => {
                 </div>
               </Card>
               
+              {/* Fixed the location icon sizing and improved layout */}
               <Card className="p-6 bg-background/20 backdrop-blur-lg border-white/10">
-                <div className="flex gap-4">
-                  <div className="p-3 rounded-lg bg-primary/20">
+                <div className="flex gap-4 items-start">
+                  <div className="p-3 rounded-lg bg-primary/20 flex-shrink-0">
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
                   <div>
