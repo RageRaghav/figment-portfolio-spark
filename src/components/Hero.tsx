@@ -10,7 +10,7 @@ export const Hero = () => {
             <p className="text-primary font-medium">Raghav Jindal</p>
           </div>
           
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold leading-tight font-display">
             Computer Science Student
             <br />
             <span className="enhanced-gradient-text">

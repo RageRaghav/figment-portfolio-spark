@@ -67,6 +67,20 @@ export const Contact = () => {
                   </div>
                 </div>
               </Card>
+
+              <Card className="p-6 bg-background/20 backdrop-blur-lg border-white/10">
+                <div className="flex gap-4">
+                  <div className="p-3 rounded-lg bg-primary/20">
+                    <Github className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-white/60">GitHub</p>
+                    <a href="https://github.com/RageRaghav" target="_blank" rel="noopener noreferrer" className="font-medium hover:text-primary transition-colors">
+                      RageRaghav
+                    </a>
+                  </div>
+                </div>
+              </Card>
             </div>
             
             <div className="pt-6">
