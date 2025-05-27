@@ -1,6 +1,8 @@
 
 import { Card } from "@/components/ui/card";
 import { Code } from "lucide-react";
+import { SiMongodb } from "react-icons/si";
+import { IoLogoNodejs } from "react-icons/io";
 import "@fortawesome/fontawesome-free/css/all.css";
 
 export const Skills = () => {
@@ -9,6 +11,8 @@ export const Skills = () => {
     { name: "React.js", icon: Code, color: "#61DAFB", fontAwesome: "fa-brands fa-react" },
     { name: "GitHub", icon: Code, color: "#FFFFFF", fontAwesome: "fa-brands fa-github" },
     { name: "Flutter", icon: Code, color: "#02569B", fontAwesome: "fa-brands fa-flutter" },
+    { name: "MongoDB", icon: SiMongodb, color: "#47A248", reactIcon: true },
+    { name: "Node.js", icon: IoLogoNodejs, color: "#47A248", reactIcon: true },
   ];
 
   const frameworks = ["ReactJS", "Node.js", "Flutter"];
@@ -33,7 +37,9 @@ export const Skills = () => {
               {skills.map((skill) => (
                 <Card key={skill.name} className="p-6 bg-background border-white/5 flex flex-col items-center justify-center card-hover">
                   <div className="w-16 h-16 flex items-center justify-center rounded-full bg-primary/10 mb-4">
-                    {skill.fontAwesome ? (
+                    {skill.reactIcon ? (
+                      <skill.icon className="w-10 h-10" style={{ color: skill.color }} />
+                    ) : skill.fontAwesome ? (
                       <i className={`${skill.fontAwesome} text-3xl`} style={{ color: skill.color }}></i>
                     ) : (
                       <skill.icon className="w-10 h-10" style={{ color: skill.color }} />
