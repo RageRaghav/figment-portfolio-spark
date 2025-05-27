@@ -1,13 +1,13 @@
-
 import { Card } from "@/components/ui/card";
 import { Code } from "lucide-react";
+import "@fortawesome/fontawesome-free/css/all.css";
 
 export const Skills = () => {
   const skills = [
-    { name: "Python", icon: Code, color: "#3776AB", customIcon: "/lovable-uploads/8e81bec5-27dd-4cf2-bfc8-9e2e9738e9e7.png" },
-    { name: "React.js", icon: Code, color: "#61DAFB", customIcon: "/lovable-uploads/37aff8b8-e1ef-4793-81ff-e00f8b286041.png" },
-    { name: "GitHub", icon: Code, color: "#333", customIcon: "/lovable-uploads/2637fd91-244b-4916-8641-dae53bcf9575.png" },
-    { name: "Flutter", icon: Code, color: "#02569B", customIcon: "/lovable-uploads/c4e490c6-6312-4f10-b552-d1dbe9dc3524.png" },
+    { name: "Python", icon: Code, color: "#3776AB", fontAwesome: "fa-brands fa-python" },
+    { name: "React.js", icon: Code, color: "#61DAFB", fontAwesome: "fa-brands fa-react" },
+    { name: "GitHub", icon: Code, color: "#333", fontAwesome: "fa-brands fa-github" },
+    { name: "Flutter", icon: Code, color: "#02569B", fontAwesome: "fa-brands fa-flutter" },
   ];
 
   const frameworks = ["ReactJS", "Node.js", "Flutter"];
@@ -32,12 +32,8 @@ export const Skills = () => {
               {skills.map((skill) => (
                 <Card key={skill.name} className="p-6 bg-background border-white/5 flex flex-col items-center justify-center card-hover">
                   <div className="w-16 h-16 flex items-center justify-center rounded-full bg-primary/10 mb-4">
-                    {skill.customIcon ? (
-                      <img 
-                        src={skill.customIcon} 
-                        alt={skill.name}
-                        className="w-8 h-8 object-contain"
-                      />
+                    {skill.fontAwesome ? (
+                      <i className={`${skill.fontAwesome} text-2xl`} style={{ color: skill.color }}></i>
                     ) : (
                       <skill.icon className="w-8 h-8" style={{ color: skill.color }} />
                     )}
