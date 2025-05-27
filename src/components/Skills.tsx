@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Code } from "lucide-react";
 import "@fortawesome/fontawesome-free/css/all.css";
@@ -6,7 +7,7 @@ export const Skills = () => {
   const skills = [
     { name: "Python", icon: Code, color: "#3776AB", fontAwesome: "fa-brands fa-python" },
     { name: "React.js", icon: Code, color: "#61DAFB", fontAwesome: "fa-brands fa-react" },
-    { name: "GitHub", icon: Code, color: "#333", fontAwesome: "fa-brands fa-github" },
+    { name: "GitHub", icon: Code, color: "#FFFFFF", fontAwesome: "fa-brands fa-github" },
     { name: "Flutter", icon: Code, color: "#02569B", fontAwesome: "fa-brands fa-flutter" },
   ];
 
@@ -33,9 +34,9 @@ export const Skills = () => {
                 <Card key={skill.name} className="p-6 bg-background border-white/5 flex flex-col items-center justify-center card-hover">
                   <div className="w-16 h-16 flex items-center justify-center rounded-full bg-primary/10 mb-4">
                     {skill.fontAwesome ? (
-                      <i className={`${skill.fontAwesome} text-2xl`} style={{ color: skill.color }}></i>
+                      <i className={`${skill.fontAwesome} text-3xl`} style={{ color: skill.color }}></i>
                     ) : (
-                      <skill.icon className="w-8 h-8" style={{ color: skill.color }} />
+                      <skill.icon className="w-10 h-10" style={{ color: skill.color }} />
                     )}
                   </div>
                   <p className="text-center text-sm font-medium">{skill.name}</p>
