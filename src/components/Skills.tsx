@@ -7,12 +7,12 @@ import "@fortawesome/fontawesome-free/css/all.css";
 
 export const Skills = () => {
   const skills = [
-    { name: "Python", icon: Code, color: "#3776AB", fontAwesome: "fa-brands fa-python" },
     { name: "React.js", icon: Code, color: "#61DAFB", fontAwesome: "fa-brands fa-react" },
+    { name: "Node.js", icon: IoLogoNodejs, color: "#47A248", reactIcon: true },
+    { name: "MongoDB", icon: SiMongodb, color: "#47A248", reactIcon: true },
+    { name: "Python", icon: Code, color: "#3776AB", fontAwesome: "fa-brands fa-python" },
     { name: "GitHub", icon: Code, color: "#FFFFFF", fontAwesome: "fa-brands fa-github" },
     { name: "Flutter", icon: Code, color: "#02569B", fontAwesome: "fa-brands fa-flutter" },
-    { name: "MongoDB", icon: SiMongodb, color: "#47A248", reactIcon: true },
-    { name: "Node.js", icon: IoLogoNodejs, color: "#47A248", reactIcon: true },
   ];
 
   const frameworks = ["ReactJS", "Node.js", "Flutter"];
