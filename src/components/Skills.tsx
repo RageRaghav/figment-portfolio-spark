@@ -55,7 +55,7 @@ export const Skills = () => {
             <div>
               <h3 className="text-xl font-semibold mb-6 text-center">Frameworks</h3>
               <div className="bg-background rounded-lg p-6 border border-white/5">
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap gap-3 justify-center">
                   {frameworks.map((framework) => (
                     <span key={framework} className="px-4 py-2 bg-primary/10 rounded-full text-sm">
                       {framework}
@@ -68,7 +68,7 @@ export const Skills = () => {
             <div>
               <h3 className="text-xl font-semibold mb-6 text-center">Databases</h3>
               <div className="bg-background rounded-lg p-6 border border-white/5">
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap gap-3 justify-center">
                   {databases.map((db) => (
                     <span key={db} className="px-4 py-2 bg-primary/10 rounded-full text-sm">
                       {db}
@@ -81,7 +81,7 @@ export const Skills = () => {
             <div>
               <h3 className="text-xl font-semibold mb-6 text-center">Others</h3>
               <div className="bg-background rounded-lg p-6 border border-white/5">
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap gap-3 justify-center">
                   {others.map((item) => (
                     <span key={item} className="px-4 py-2 bg-primary/10 rounded-full text-sm">
                       {item}

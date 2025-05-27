@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Send, Linkedin, Github } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Linkedin } from "lucide-react";
 export const Contact = () => {
   return <section id="contact" className="py-20 px-6 gradient-bg">
       <div className="max-w-7xl mx-auto">
@@ -65,20 +65,6 @@ export const Contact = () => {
                     <p className="text-sm text-white/60">LinkedIn</p>
                     <a href="https://www.linkedin.com/in/rjindal2112/" target="_blank" rel="noopener noreferrer" className="font-medium hover:text-primary transition-colors">
                       rjindal2112
-                    </a>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="p-6 bg-background/20 backdrop-blur-lg border-white/10">
-                <div className="flex gap-4">
-                  <div className="p-3 rounded-lg bg-primary/20">
-                    <Github className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-white/60">GitHub</p>
-                    <a href="https://github.com/RageRaghav" target="_blank" rel="noopener noreferrer" className="font-medium hover:text-primary transition-colors">
-                      RageRaghav
                     </a>
                   </div>
                 </div>

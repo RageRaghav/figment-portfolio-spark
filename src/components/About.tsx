@@ -1,3 +1,4 @@
+
 import { BookOpen, Briefcase, Award } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
@@ -6,7 +7,7 @@ export const About = () => {
     <section id="about" className="py-20 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center text-center mb-16 animate-slide-up">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">My Experience</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
           <div className="w-24 h-1 bg-primary rounded-full mb-6"></div>
           <p className="text-white/80 max-w-2xl">
             I'm a passionate Computer Science student with a focus on frontend development 
