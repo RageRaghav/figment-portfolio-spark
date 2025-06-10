@@ -24,10 +24,16 @@ export const Projects = () => {
     {
       title: "Restaurant App",
       description: "A Flutter-based mobile application for restaurant management and ordering system built with REST APIs for seamless user experience.",
-      image: "/placeholder.svg",
+      image: "/lovable-uploads/61683662-8c9a-4adb-81e0-bf629dd55444.png",
       tags: ["Flutter", "REST APIs", "Mobile"],
       demoLink: "https://drive.google.com/file/d/1075Do8MkqyMXkcBH02WftBy9vgBv91Zi/view?usp=sharing",
-      codeLink: "https://github.com/RageRaghav/OneBlanc"
+      codeLink: "https://github.com/RageRaghav/OneBlanc",
+      gallery: [
+        "/lovable-uploads/61683662-8c9a-4adb-81e0-bf629dd55444.png",
+        "/lovable-uploads/fbeeee34-3266-480f-b33a-5ffeaaec334e.png",
+        "/lovable-uploads/988f0b6a-2f1f-43c0-b475-85bc1be77197.png",
+        "/lovable-uploads/b1c3dbe0-9583-4da7-a943-ad0590410ae8.png"
+      ]
     },
   ];
 
@@ -55,6 +61,23 @@ export const Projects = () => {
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold mb-3">{project.title}</h3>
                 <p className="text-sm text-white/70 mb-4 flex-grow">{project.description}</p>
+                
+                {project.gallery && (
+                  <div className="mb-4">
+                    <p className="text-xs text-white/60 mb-2">App Screenshots:</p>
+                    <div className="grid grid-cols-4 gap-1">
+                      {project.gallery.map((img, index) => (
+                        <div key={index} className="aspect-square overflow-hidden rounded border border-white/10">
+                          <img 
+                            src={img} 
+                            alt={`${project.title} screenshot ${index + 1}`}
+                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
                 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map(tag => (
