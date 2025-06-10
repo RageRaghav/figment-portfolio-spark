@@ -24,7 +24,7 @@ export const Projects = () => {
     {
       title: "Restaurant App",
       description: "A Flutter-based mobile application for restaurant management and ordering system built with REST APIs for seamless user experience.",
-      image: "/lovable-uploads/61683662-8c9a-4adb-81e0-bf629dd55444.png",
+      image: "/lovable-uploads/6167c078-cdfd-4e68-886f-8cb9c95da66b.png",
       tags: ["Flutter", "REST APIs", "Mobile"],
       demoLink: "https://drive.google.com/file/d/1075Do8MkqyMXkcBH02WftBy9vgBv91Zi/view?usp=sharing",
       codeLink: "https://github.com/RageRaghav/OneBlanc",
