@@ -22,12 +22,12 @@ export const Projects = () => {
       codeLink: "#"
     },
     {
-      title: "HOMEY Furniture App",
-      description: "A Flutter-based mobile application for browsing and purchasing furniture with AR preview functionality.",
+      title: "Restaurant App",
+      description: "A Flutter-based mobile application for restaurant management and ordering system built with REST APIs for seamless user experience.",
       image: "/placeholder.svg",
-      tags: ["Flutter", "Firebase", "AR Kit"],
-      demoLink: "#",
-      codeLink: "#"
+      tags: ["Flutter", "REST APIs", "Mobile"],
+      demoLink: "https://drive.google.com/file/d/1075Do8MkqyMXkcBH02WftBy9vgBv91Zi/view?usp=sharing",
+      codeLink: "https://github.com/RageRaghav/OneBlanc"
     },
   ];
 
@@ -68,7 +68,7 @@ export const Projects = () => {
                   <a href={project.demoLink} className="flex-1" target="_blank" rel="noopener noreferrer">
                     <Button variant="primaryGradient" className="w-full rounded-full flex gap-2 items-center justify-center">
                       <ExternalLink className="w-4 h-4" />
-                      <span>Live Demo</span>
+                      <span>Demo Video</span>
                     </Button>
                   </a>
                   <a href={project.codeLink} className="flex-1" target="_blank" rel="noopener noreferrer">
