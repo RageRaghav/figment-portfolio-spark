@@ -1,8 +1,16 @@
-
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 import { Resend } from "npm:resend@2.0.0";
 
-const resend = new Resend(Deno.env.get("RESEND_API_KEY"));
+// Add debugging for the API key
+const apiKey = Deno.env.get("RESEND_API_KEY");
+console.log("API Key exists:", !!apiKey);
+console.log("API Key length:", apiKey ? apiKey.length : "undefined");
+
+if (!apiKey) {
+  console.error("RESEND_API_KEY is not set in environment variables");
+}
+
+const resend = new Resend(apiKey);
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -51,6 +59,18 @@ const handler = async (req: Request): Promise<Response> => {
         JSON.stringify({ error: "Please enter a valid email address" }),
         {
           status: 400,
+          headers: { "Content-Type": "application/json", ...corsHeaders },
+        }
+      );
+    }
+
+    // Check if API key is available before sending
+    if (!apiKey) {
+      console.error("RESEND_API_KEY is not configured");
+      return new Response(
+        JSON.stringify({ error: "Email service not configured properly" }),
+        {
+          status: 500,
           headers: { "Content-Type": "application/json", ...corsHeaders },
         }
       );
