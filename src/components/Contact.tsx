@@ -1,9 +1,70 @@
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Mail, Phone, MapPin, Send, Linkedin } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Mail, Phone, MapPin, Send, Linkedin, Loader2 } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
+
 export const Contact = () => {
-  return <section id="contact" className="py-20 px-6 gradient-bg">
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
+
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData,
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Message sent successfully!",
+        description: "Thank you for your message. I'll get back to you soon.",
+      });
+
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error: any) {
+      console.error("Error sending message:", error);
+      toast({
+        title: "Failed to send message",
+        description: error.message || "Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  return (
+    <section id="contact" className="py-20 px-6 gradient-bg">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
@@ -18,7 +79,6 @@ export const Contact = () => {
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {/* Added truncation and width control for email card */}
               <Card className="p-6 bg-background/20 backdrop-blur-lg border-white/10">
                 <div className="flex gap-4 items-center">
                   <div className="p-3 rounded-lg bg-primary/20 flex-shrink-0">
@@ -43,7 +103,6 @@ export const Contact = () => {
                 </div>
               </Card>
               
-              {/* Fixed the location icon sizing and improved layout */}
               <Card className="p-6 bg-background/20 backdrop-blur-lg border-white/10">
                 <div className="flex gap-4 items-start">
                   <div className="p-3 rounded-lg bg-primary/20 flex-shrink-0">
@@ -85,36 +144,87 @@ export const Contact = () => {
           <div className="lg:col-span-3">
             <Card className="p-8 bg-background/20 backdrop-blur-lg border-white/10">
               <h3 className="text-2xl font-semibold mb-6">Send Me a Message</h3>
-              <form className="space-y-5">
+              <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm text-white/80">Your Name</label>
-                    <input type="text" id="name" placeholder="John Doe" className="w-full p-3 rounded-lg bg-background/50 border border-white/10 focus:border-primary/40 outline-none" />
+                    <Input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      placeholder="John Doe"
+                      required
+                      className="bg-background/50 border-white/10 focus:border-primary/40"
+                    />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="email" className="text-sm text-white/80">Your Email</label>
-                    <input type="email" id="email" placeholder="john@example.com" className="w-full p-3 rounded-lg bg-background/50 border border-white/10 focus:border-primary/40 outline-none" />
+                    <Input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      placeholder="john@example.com"
+                      required
+                      className="bg-background/50 border-white/10 focus:border-primary/40"
+                    />
                   </div>
                 </div>
                 
                 <div className="space-y-2">
                   <label htmlFor="subject" className="text-sm text-white/80">Subject</label>
-                  <input type="text" id="subject" placeholder="Project Inquiry" className="w-full p-3 rounded-lg bg-background/50 border border-white/10 focus:border-primary/40 outline-none" />
+                  <Input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleInputChange}
+                    placeholder="Project Inquiry"
+                    required
+                    className="bg-background/50 border-white/10 focus:border-primary/40"
+                  />
                 </div>
                 
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-sm text-white/80">Your Message</label>
-                  <textarea id="message" placeholder="Hello Raghav, I'd like to discuss a project..." rows={5} className="w-full p-3 rounded-lg bg-background/50 border border-white/10 focus:border-primary/40 outline-none resize-none"></textarea>
+                  <Textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    placeholder="Hello Raghav, I'd like to discuss a project..."
+                    rows={5}
+                    required
+                    className="bg-background/50 border-white/10 focus:border-primary/40 resize-none"
+                  />
                 </div>
                 
-                <Button variant="gradient" className="w-full rounded-full flex items-center justify-center gap-2">
-                  <Send className="w-4 h-4" />
-                  <span>Send Message</span>
+                <Button 
+                  type="submit"
+                  variant="gradient" 
+                  className="w-full rounded-full flex items-center justify-center gap-2"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                      <span>Sending...</span>
+                    </>
+                  ) : (
+                    <>
+                      <Send className="w-4 h-4" />
+                      <span>Send Message</span>
+                    </>
+                  )}
                 </Button>
               </form>
             </Card>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
