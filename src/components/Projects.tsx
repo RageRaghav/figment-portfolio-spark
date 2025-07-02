@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
@@ -13,17 +14,17 @@ export const Projects = () => {
       codeLink: "#"
     },
     {
-      title: "LOZAN E-commerce Web",
-      description: "A full-featured e-commerce platform with product listing, cart functionality, and payment integration.",
-      image: "/placeholder.svg",
-      tags: ["React", "Firebase", "Stripe"],
+      title: "Shopnest",
+      description: "A full-featured e-commerce platform with product listing, cart functionality, and admin dashboard for comprehensive store management.",
+      image: "/lovable-uploads/87ab6e73-fd99-47a4-b9e9-05587c358256.png",
+      tags: ["Flutter", "NodeJS", "MongoDB"],
       demoLink: "#",
-      codeLink: "#"
+      codeLink: "https://github.com/RageRaghav/ShopNest"
     },
     {
       title: "Restaurant App",
       description: "A Flutter-based mobile application for restaurant management and ordering system built with REST APIs for seamless user experience.",
-      image: "/lovable-uploads/6167c078-cdfd-4e68-886f-8cb9c95da66b.png",
+      image: "/lovable-uploads/3cdbea38-5f9b-488a-8f38-dc6cab23f03f.png",
       tags: ["Flutter", "REST APIs", "Mobile"],
       demoLink: "https://drive.google.com/file/d/1075Do8MkqyMXkcBH02WftBy9vgBv91Zi/view?usp=sharing",
       codeLink: "https://github.com/RageRaghav/OneBlanc"
