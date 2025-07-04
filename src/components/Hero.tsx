@@ -1,3 +1,4 @@
+
 import { GithubIcon, LinkedinIcon, ArrowDownCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 export const Hero = () => {
@@ -29,7 +30,7 @@ export const Hero = () => {
             <div className="w-px h-12 bg-white/10" />
             <div className="flex items-center gap-2">
               <span className="text-4xl font-bold text-primary">2</span>
-              <span className="text-sm opacity-80">YEARS<br />EXPERIENCE</span>
+              <span className="text-sm opacity-80">YEARS<br />DEVELOPMENT EXPERIENCE</span>
             </div>
           </div>
           
