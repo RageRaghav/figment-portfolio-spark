@@ -1,18 +1,9 @@
-
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
 
 export const Projects = () => {
   const projects = [
-    {
-      title: "UTX Portfolio Website",
-      description: "A responsive portfolio website built with React and Tailwind CSS featuring a clean, modern design with smooth animations.",
-      image: "/placeholder.svg",
-      tags: ["React", "Tailwind CSS", "Vite"],
-      demoLink: "#",
-      codeLink: "#"
-    },
     {
       title: "Shopnest",
       description: "A full-featured e-commerce platform with product listing, cart functionality, and admin dashboard for comprehensive store management.",
