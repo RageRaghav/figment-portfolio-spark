@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
@@ -17,7 +18,7 @@ export const Projects = () => {
       description: "A full-featured e-commerce platform with product listing, cart functionality, and admin dashboard for comprehensive store management.",
       image: "/lovable-uploads/0720668b-ff9a-4840-987d-f426325282e0.png",
       tags: ["Flutter", "NodeJS", "MongoDB"],
-      demoLink: "#",
+      demoLink: "https://drive.google.com/file/d/1Znt-3ZdSkN1T49by000y6jchNE-HqwMi/view?usp=sharing",
       codeLink: "https://github.com/RageRaghav/ShopNest"
     },
     {
