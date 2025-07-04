@@ -1,4 +1,3 @@
-
 import { GithubIcon, LinkedinIcon, ArrowDownCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 export const Hero = () => {
@@ -24,12 +23,12 @@ export const Hero = () => {
           
           <div className="flex items-center gap-8 pt-4">
             <div className="flex items-center gap-2">
-              <span className="text-4xl font-bold text-primary">3</span>
+              <span className="text-4xl font-bold text-primary">2</span>
               <span className="text-sm opacity-80">PROJECTS<br />COMPLETED</span>
             </div>
             <div className="w-px h-12 bg-white/10" />
             <div className="flex items-center gap-2">
-              <span className="text-4xl font-bold text-primary">2+</span>
+              <span className="text-4xl font-bold text-primary">2</span>
               <span className="text-sm opacity-80">YEARS<br />EXPERIENCE</span>
             </div>
           </div>
@@ -52,7 +51,9 @@ export const Hero = () => {
           </div>
         </div>
         
-        <div className="relative flex justify-center lg:justify-end animate-slide-up" style={{ animationDelay: '0.4s' }}>
+        <div className="relative flex justify-center lg:justify-end animate-slide-up" style={{
+        animationDelay: '0.4s'
+      }}>
           <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full bg-primary/20 purple-glow flex items-center justify-center overflow-hidden">
             <div className="absolute inset-2 rounded-full overflow-hidden bg-background flex items-center justify-center">
               <img alt="Raghav Jindal" onError={e => {
