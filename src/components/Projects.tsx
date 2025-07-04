@@ -16,7 +16,7 @@ export const Projects = () => {
     {
       title: "Kicks-on",
       description: "A modern shoe shopping mobile application built with Flutter and Provider for state management, featuring product browsing, cart functionality, and seamless user experience.",
-      image: "/lovable-uploads/6b367356-d3a9-4b03-bbac-20979e78fa40.png",
+      image: "/lovable-uploads/eeb09329-34c8-469e-9aee-e34e902bc5a1.png",
       tags: ["Flutter", "Provider", "Mobile"],
       demoLink: "https://drive.google.com/file/d/13ryr4aM5EmtNwjTnYrL0ZoZcDszoPOxj/view?usp=sharing",
       codeLink: "https://github.com/RageRaghav/kickson"

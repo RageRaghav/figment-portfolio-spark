@@ -1,8 +1,10 @@
 
 import { GithubIcon, LinkedinIcon, ArrowDownCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
 export const Hero = () => {
-  return <section id="home" className="min-h-screen pt-28 pb-20 px-6 gradient-bg">
+  return (
+    <section id="home" className="min-h-screen pt-28 pb-20 px-6 gradient-bg">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="flex flex-col space-y-6 stagger-animation">
           <div className="flex items-center gap-2">
@@ -24,7 +26,7 @@ export const Hero = () => {
           
           <div className="flex items-center gap-8 pt-4">
             <div className="flex items-center gap-2">
-              <span className="text-4xl font-bold text-primary">2</span>
+              <span className="text-4xl font-bold text-primary">3</span>
               <span className="text-sm opacity-80">PROJECTS<br />COMPLETED</span>
             </div>
             <div className="w-px h-12 bg-white/10" />
@@ -71,5 +73,6 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
