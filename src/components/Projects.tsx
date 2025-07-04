@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
@@ -11,6 +12,14 @@ export const Projects = () => {
       tags: ["Flutter", "NodeJS", "MongoDB"],
       demoLink: "https://drive.google.com/file/d/1Znt-3ZdSkN1T49by000y6jchNE-HqwMi/view?usp=sharing",
       codeLink: "https://github.com/RageRaghav/ShopNest"
+    },
+    {
+      title: "Kicks-on",
+      description: "A modern shoe shopping mobile application built with Flutter and Provider for state management, featuring product browsing, cart functionality, and seamless user experience.",
+      image: "/lovable-uploads/6b367356-d3a9-4b03-bbac-20979e78fa40.png",
+      tags: ["Flutter", "Provider", "Mobile"],
+      demoLink: "https://drive.google.com/file/d/13ryr4aM5EmtNwjTnYrL0ZoZcDszoPOxj/view?usp=sharing",
+      codeLink: "https://github.com/RageRaghav/kickson"
     },
     {
       title: "Restaurant App",
